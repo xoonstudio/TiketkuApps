@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryWhite"
+    tools:context=".TicketDetail">
+
+    <ImageView
+        android:id="@+id/xtravel_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/menu_pisa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@color/opacityColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="10dp"
+            android:layout_height="16dp"
+            android:src="@drawable/icon_back_white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/xtravel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/primaryWhite"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/xtravel_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/primaryWhite"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xtravel_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_menu_two"
+        android:orientation="vertical"
+        android:layout_marginTop="215dp"
+        android:paddingTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xtravel_location">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Information"
+            android:textColor="@color/primaryDark"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/montserrat_semibold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Knowing before travel"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="14sp"
+            android:textColor="@color/secondaryDark"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:padding="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="195dp"
+                    android:layout_height="80dp"
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_new_item">
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:src="@drawable/icon_photo_shot"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/xphoto_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textColor="@color/primaryDark"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tripod Everywhere"
+                            android:fontFamily="@font/montserrat_light"
+                            android:textColor="@color/secondaryDark"
+                            android:textSize="11sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="195dp"
+                    android:layout_height="80dp"
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/bg_new_item">
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:src="@drawable/icon_wifi"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/xwifi_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textColor="@color/primaryDark"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Connect with tourist"
+                            android:fontFamily="@font/montserrat_light"
+                            android:textColor="@color/secondaryDark"
+                            android:textSize="11sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="195dp"
+                    android:layout_height="80dp"
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/bg_new_item">
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:src="@drawable/icon_festival"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/xfestival_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textColor="@color/primaryDark"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Food, Dance, Tradition"
+                            android:fontFamily="@font/montserrat_light"
+                            android:textColor="@color/secondaryDark"
+                            android:textSize="11sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:text="Description"
+            android:textColor="@color/primaryDark"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/montserrat_semibold"/>
+
+        <TextView
+            android:id="@+id/xdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="14sp"
+            android:textColor="@color/secondaryDark"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ticket Price"
+            android:layout_marginTop="27dp"
+            android:textColor="@color/primaryDark"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/montserrat_semibold"/>
+
+        <TextView
+            android:id="@+id/xticket_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/primiaryGreen"
+            android:textSize="17sp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/montserrat_semibold"/>
+
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:id="@+id/btn_buy_ticket"
+        android:elevation="10dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_btn_blue"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:paddingLeft="56dp"
+        android:paddingRight="56dp"
+        android:text="Buy Ticket"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryWhite"
+        android:textSize="17sp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

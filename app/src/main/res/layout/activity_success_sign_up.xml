@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryWhite"
+    tools:context=".SuccessSignUp">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ilus_success"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Hurray …."
+        android:textColor="@color/primaryDark"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/secondaryDark"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btn_explore"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="202dp"
+        android:elevation="6dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_btn_blue"
+        android:drawableRight="@drawable/icon_continue"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Jelajahi"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryWhite"
+        android:textSize="17sp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

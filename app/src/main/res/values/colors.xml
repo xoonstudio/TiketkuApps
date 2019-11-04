@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3366FF</color>
+    <color name="colorPrimaryDark">#3366FF</color>
+    <color name="colorAccent">#3366FF</color>
+
+    <color name="primaryBlue">#3366FF</color>
+    <color name="secondaryBlue">#33CEFF</color>
+    <color name="tintBlue">#7AF8FA</color>
+    <color name="primiaryGreen">#43F3C2</color>
+    <color name="primaryWhite">#FFFFFF</color>
+    <color name="primaryDark">#565656</color>
+    <color name="secondaryDark">#707070</color>
+    <color name="primaryGrey">#F8FAFF</color>
+    <color name="opacityColor">#56565656</color>
+</resources>

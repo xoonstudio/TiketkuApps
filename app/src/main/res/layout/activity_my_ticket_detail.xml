@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryWhite"
+    tools:context=".MyTicketDetail">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="283dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/header_my_tiket_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="10dp"
+            android:layout_height="16dp"
+            android:src="@drawable/icon_back_white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="My Ticket"
+        android:textColor="@color/primaryWhite"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/xtravel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/primaryWhite"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/xtravel_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/primaryWhite"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xtravel_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/bg_menu_one"
+        android:layout_marginTop="49dp"
+        android:layout_marginLeft="20dp"
+        android:elevation="4dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/xtravel_location">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primaryDark"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Ticket Detail"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Know more about your ticket"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/secondaryDark"
+            android:fontFamily="@font/montserrat_light"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/primaryGrey"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryDark"
+                android:text="Date"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/xtravel_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondaryDark"
+                android:fontFamily="@font/montserrat_light"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryDark"
+                android:text="Time"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/xtravel_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondaryDark"
+                android:fontFamily="@font/montserrat_light"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryDark"
+                android:text="Information"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/xtravel_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondaryDark"
+                android:fontFamily="@font/montserrat_light"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:id="@+id/btn_refund_ticket"
+        android:elevation="10dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_btn_green"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:paddingLeft="56dp"
+        android:paddingRight="56dp"
+        android:text="Refund Now"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryWhite"
+        android:textSize="17sp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/notif_refund"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/opacityColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/bg_menu_one"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:src="@drawable/ilus_refund"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refund ticket"
+                android:textColor="@color/primaryDark"
+                android:textSize="17sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginTop="32dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="your ticket will be return and your money will back in your balance"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat_light"
+                android:textColor="@color/secondaryDark"
+                android:layout_marginTop="8dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/primaryGrey"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/do_refund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/primaryDark"
+                android:textSize="17sp"
+                android:layout_marginTop="7dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

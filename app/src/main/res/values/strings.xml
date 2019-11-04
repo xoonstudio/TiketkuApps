@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tiketku</string>
+    <string name="name">Name</string>
+    <string name="bio">Bio</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="tagline">Discover \nThe Beauty\n of World</string>
+</resources>

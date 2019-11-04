@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryWhite"
+    tools:context=".SignUpTwo">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/header_sign_up_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="10dp"
+            android:layout_height="16dp"
+            android:src="@drawable/icon_back_white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hello_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/primaryWhite"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello_tag">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Fill all then world can know who you are ever and forever"
+            android:textColor="@color/primaryWhite"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end">
+
+            <LinearLayout
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:layout_gravity="end"
+                android:background="@drawable/bg_circle_white"
+                android:gravity="center">
+
+                <com.github.florent37.shapeofview.shapes.CircleView
+                    android:layout_width="66dp"
+                    android:layout_height="66dp">
+
+                    <ImageView
+                        android:id="@+id/user_profile"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/ilustration_picture"
+                        android:layout_height="match_parent"/>
+
+                </com.github.florent37.shapeofview.shapes.CircleView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_add_photo_profile"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_circle_blue"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/icon_photo" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_light"
+                android:text="@string/name"
+                android:textColor="@color/secondaryDark"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/xname"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_edit_item"
+                android:inputType="text"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_light"
+                android:text="@string/bio"
+                android:textColor="@color/secondaryDark"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/xbio"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_edit_item"
+                android:inputType="text"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_continue"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="202dp"
+        android:elevation="10dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_btn_blue"
+        android:drawableRight="@drawable/icon_continue"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryWhite"
+        android:textSize="17sp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
